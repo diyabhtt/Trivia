@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="72p-iw-lzG">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Settings" id="BYZ-38-t0r" customClass="ViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op1-ZO-1su">
+                                <rect key="frame" x="126.66666666666667" y="186" width="139.66666666666663" height="20"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" red="0.3530227199" green="0.2310803924" blue="0.17752982249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVI-n0-tO1">
+                                <rect key="frame" x="36.666666666666657" y="228" width="320" height="216"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many questions?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jb-1s-0fK">
+                                <rect key="frame" x="115.66666666666669" y="460" width="162" height="20"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" red="0.3530227199" green="0.2310803924" blue="0.17752982249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Htq-94-cAA">
+                                <rect key="frame" x="149.66666666666666" y="566" width="94" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.3530227199" green="0.2310803924" blue="0.17752982249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="stepQ:" destination="BYZ-38-t0r" eventType="valueChanged" id="T0w-jp-K84"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xey-KO-WrH">
+                                <rect key="frame" x="10" y="488" width="373" height="46"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="39"/>
+                                <color key="textColor" red="0.3530227199" green="0.2310803924" blue="0.17752982249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia.l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEt-TP-r80">
+                                <rect key="frame" x="123.33333333333333" y="101.33333333333333" width="146.33333333333337" height="54.666666666666671"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="47"/>
+                                <color key="textColor" red="0.3530227199" green="0.2310803924" blue="0.17752982249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.93446303858901514" green="0.87566635189572428" blue="0.82216908309114156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2jb-1s-0fK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Bj-1g-DP0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Htq-94-cAA" secondAttribute="bottom" constant="195" id="6cn-mY-tsZ"/>
+                            <constraint firstItem="2jb-1s-0fK" firstAttribute="top" secondItem="DVI-n0-tO1" secondAttribute="bottom" constant="16" id="7hH-dt-S6u"/>
+                            <constraint firstItem="Op1-ZO-1su" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="186" id="Eyx-v2-Y6Q"/>
+                            <constraint firstItem="Op1-ZO-1su" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GEt-3N-6ml"/>
+                            <constraint firstItem="DVI-n0-tO1" firstAttribute="top" secondItem="Op1-ZO-1su" secondAttribute="bottom" constant="22" id="MTo-ch-Q6e"/>
+                            <constraint firstItem="Xey-KO-WrH" firstAttribute="top" secondItem="2jb-1s-0fK" secondAttribute="bottom" constant="8" id="MuD-rT-05b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xey-KO-WrH" secondAttribute="trailing" constant="10" id="XiZ-hQ-xyJ"/>
+                            <constraint firstItem="DVI-n0-tO1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zvk-v8-s5X"/>
+                            <constraint firstItem="Op1-ZO-1su" firstAttribute="top" secondItem="rEt-TP-r80" secondAttribute="bottom" constant="30" id="cLj-qq-rdw"/>
+                            <constraint firstItem="Op1-ZO-1su" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126.66666666666669" id="cjI-xZ-5Xg"/>
+                            <constraint firstItem="rEt-TP-r80" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fdR-Od-Na8"/>
+                            <constraint firstItem="Xey-KO-WrH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kNR-wf-3ac"/>
+                            <constraint firstItem="Htq-94-cAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCY-jz-L5T"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" selectedImage="gearshape.fill" id="1jW-WI-AXO"/>
+                    <navigationItem key="navigationItem" id="2WC-ku-aOg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="choose" destination="Op1-ZO-1su" id="adq-3Z-Meg"/>
+                        <outlet property="howMany" destination="2jb-1s-0fK" id="Fzj-lg-PoA"/>
+                        <outlet property="number" destination="Xey-KO-WrH" id="6Wf-9k-Nbt"/>
+                        <outlet property="picker" destination="DVI-n0-tO1" id="mtE-RN-Emn"/>
+                        <outlet property="stepper" destination="Htq-94-cAA" id="aDs-1H-qZt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635.8778625954199" y="-27.464788732394368"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="C9S-s5-PDs">
+            <objects>
+                <viewController title="Game" id="92P-xa-jg9" customClass="PlayViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rSE-aF-zGk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oe6-Gl-qwE">
+                                <rect key="frame" x="16" y="79" width="361" height="28"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
+                                <color key="textColor" red="0.3530227199" green="0.2310803924" blue="0.17752982249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lm6-vP-GPM">
+                                <rect key="frame" x="16" y="391" width="361" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.53213983769999995" green="0.42790168519999999" blue="0.37641036509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="click:" destination="92P-xa-jg9" eventType="touchUpInside" id="pkX-HL-BfC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pv-ey-fa0">
+                                <rect key="frame" x="16" y="465" width="361" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.53213983769999995" green="0.42790168519999999" blue="0.37641036509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="click:" destination="92P-xa-jg9" eventType="touchUpInside" id="OII-y1-jRY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIF-Wq-J2f">
+                                <rect key="frame" x="16" y="539" width="361" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.53213983769999995" green="0.42790168519999999" blue="0.37641036509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="click:" destination="92P-xa-jg9" eventType="touchUpInside" id="gGa-zv-Vwm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHB-Jt-NWJ">
+                                <rect key="frame" x="16" y="613" width="361" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.53213983769999995" green="0.42790168519999999" blue="0.37641036509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="click:" destination="92P-xa-jg9" eventType="touchUpInside" id="eM5-oM-7hW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEq-BL-JBR">
+                                <rect key="frame" x="16" y="121" width="361" height="112"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="18"/>
+                                <color key="textColor" red="0.3530227199" green="0.2310803924" blue="0.17752982249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lns-Km-u6a"/>
+                        <color key="backgroundColor" red="0.93446303860000002" green="0.87566635189999997" blue="0.82216908310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="LEq-BL-JBR" firstAttribute="top" secondItem="oe6-Gl-qwE" secondAttribute="bottom" constant="8" id="0cG-6I-iTm"/>
+                            <constraint firstItem="oe6-Gl-qwE" firstAttribute="centerX" secondItem="rSE-aF-zGk" secondAttribute="centerX" id="Fvi-BC-Pa3"/>
+                            <constraint firstItem="oe6-Gl-qwE" firstAttribute="leading" secondItem="rSE-aF-zGk" secondAttribute="leadingMargin" id="WHT-bS-VDr"/>
+                            <constraint firstItem="LEq-BL-JBR" firstAttribute="width" secondItem="oe6-Gl-qwE" secondAttribute="width" id="Ws9-Qi-hB2"/>
+                            <constraint firstItem="LEq-BL-JBR" firstAttribute="centerX" secondItem="rSE-aF-zGk" secondAttribute="centerX" id="h34-Kc-TLD"/>
+                            <constraint firstItem="oe6-Gl-qwE" firstAttribute="top" secondItem="Lns-Km-u6a" secondAttribute="top" constant="20" id="uhs-bs-g8h"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Play" image="play.circle" catalog="system" selectedImage="play.circle.fill" id="uhG-jl-dd7"/>
+                    <navigationItem key="navigationItem" id="Bee-Dp-F69"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="label" destination="oe6-Gl-qwE" id="RQ0-lc-wUw"/>
+                        <outlet property="playTab" destination="uhG-jl-dd7" id="zxz-gu-Wjd"/>
+                        <outlet property="questionLabel" destination="LEq-BL-JBR" id="wn1-bz-E8h"/>
+                        <outletCollection property="buttons" destination="lm6-vP-GPM" collectionClass="NSMutableArray" id="YCX-U3-kNQ"/>
+                        <outletCollection property="buttons" destination="7Pv-ey-fa0" collectionClass="NSMutableArray" id="uL0-kK-J08"/>
+                        <outletCollection property="buttons" destination="dIF-Wq-J2f" collectionClass="NSMutableArray" id="IsB-pA-iVB"/>
+                        <outletCollection property="buttons" destination="OHB-Jt-NWJ" collectionClass="NSMutableArray" id="2V2-Gf-3ce"/>
+                        <segue destination="1kT-83-lRm" kind="show" identifier="score" id="JhG-oc-9R6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1YC-Qs-goB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2559.5419847328244" y="-27.464788732394368"/>
+        </scene>
+        <!--Score-->
+        <scene sceneID="ny6-r3-9ch">
+            <objects>
+                <viewController title="Score" id="1kT-83-lRm" customClass="finalViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jdf-Be-grM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfq-bx-6Fz">
+                                <rect key="frame" x="175" y="227" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EU-AY-3vn">
+                                <rect key="frame" x="192" y="284" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSp-aH-jLc">
+                                <rect key="frame" x="164" y="652" width="65" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Tts-tX-X7P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kh6-gA-0ZA"/>
+                        <color key="backgroundColor" red="0.93446303860000002" green="0.87566635189999997" blue="0.82216908310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xa0-GW-Tvf"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="5EU-AY-3vn" id="ThT-wn-tuY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HR2-Vf-Zuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3404" y="-27"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Mon-84-qxF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="72p-iw-lzG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Ey-EY-kb5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.3530227199" green="0.2310803924" blue="0.17752982249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.35302271987452649" green="0.23108039240361039" blue="0.17752982246988669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="UQN-6k-5qu"/>
+                        <segue destination="92P-xa-jg9" kind="relationship" relationship="viewControllers" id="YXY-Jd-2qD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCQ-bq-DYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2083" y="-818"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Tts-tX-X7P"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="play.circle" catalog="system" width="128" height="123"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
